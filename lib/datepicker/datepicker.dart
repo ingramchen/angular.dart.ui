@@ -333,7 +333,7 @@ class Datepicker implements ShadowRootAware, ScopeAware {
           dom.ButtonElement btnEl = new dom.ButtonElement()
           ..type = 'button'
           ..style.width = '100%'
-          ..classes.add('btn btn-default btn-sm')
+          ..classes.addAll(['btn', 'btn-default', 'btn-sm'])
           ..onClick.listen((dom.MouseEvent evt){
             select(dt.date);
           });
